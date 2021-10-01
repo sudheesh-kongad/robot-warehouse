@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - WarehouseTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>WarehouseTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.sudheesh.robotwarehouse.html">org.sudheesh.robotwarehouse</a> &gt; WarehouseTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.070s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Test the crate should moved from position (5,5) to (5,9)</td>
+<td class="success">testGrabAndDropWorksAsExpected()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test the robot moves back to origin on command N E S W</td>
+<td class="success">testIfRobotMovesBackToOrigin()</td>
+<td class="success">0.041s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test robot should not go out of grid</td>
+<td class="success">testOutOfGridException()</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test robot should not drop a crate on another crate</td>
+<td class="success">testShouldNotDropCrateOnAnotherCrate()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test robot should not try and lift a crate if it already lifting one</td>
+<td class="success">testShouldNotLiftIfAlreadyLiftingOne()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Test robot should not lift a crate if there is not one present</td>
+<td class="success">testShouldNotLiftIfNotOnePresent()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Processing started, commands=[N, E, S, W], Robot position=[0, 9]
+Robot moved to North, position=[0, 8]
+Robot moved to east, position=[1, 8]
+Robot moved to south, position=[1, 9]
+Robot moved to west, position=[0, 9]
+Processing completed, Robot start position=[0, 9]
+Processing started, commands=[N, E, S, W, S], Robot position=[0, 9]
+Robot moved to North, position=[0, 8]
+Robot moved to east, position=[1, 8]
+Robot moved to south, position=[1, 9]
+Robot moved to west, position=[0, 9]
+Processing started, commands=[N, E, N, E, N, E, N, E, E, G, N, E, N, E, N, E, N, E, N, D], Robot position=[0, 9]
+Robot moved to North, position=[0, 8]
+Robot moved to east, position=[1, 8]
+Robot moved to North, position=[1, 7]
+Robot moved to east, position=[2, 7]
+Robot moved to North, position=[2, 6]
+Robot moved to east, position=[3, 6]
+Robot moved to North, position=[3, 5]
+Robot moved to east, position=[4, 5]
+Robot moved to east, position=[5, 5]
+Crate grabbed successfully, position=[5, 5]
+Robot moved to North, position=[5, 4]
+Robot moved to east, position=[6, 4]
+Robot moved to North, position=[6, 3]
+Robot moved to east, position=[7, 3]
+Robot moved to North, position=[7, 2]
+Robot moved to east, position=[8, 2]
+Robot moved to North, position=[8, 1]
+Robot moved to east, position=[9, 1]
+Robot moved to North, position=[9, 0]
+Processing started, commands=[N, E, N, E, N, E, N, E, E, G, S, G], Robot position=[0, 9]
+Robot moved to North, position=[0, 8]
+Robot moved to east, position=[1, 8]
+Robot moved to North, position=[1, 7]
+Robot moved to east, position=[2, 7]
+Robot moved to North, position=[2, 6]
+Robot moved to east, position=[3, 6]
+Robot moved to North, position=[3, 5]
+Robot moved to east, position=[4, 5]
+Robot moved to east, position=[5, 5]
+Crate grabbed successfully, position=[5, 5]
+Robot moved to south, position=[5, 6]
+Processing started, commands=[G], Robot position=[0, 9]
+Processing started, commands=[N, E, N, E, N, E, N, E, E, G, S, S, S, S, D], Robot position=[0, 9]
+Robot moved to North, position=[0, 8]
+Robot moved to east, position=[1, 8]
+Robot moved to North, position=[1, 7]
+Robot moved to east, position=[2, 7]
+Robot moved to North, position=[2, 6]
+Robot moved to east, position=[3, 6]
+Robot moved to North, position=[3, 5]
+Robot moved to east, position=[4, 5]
+Robot moved to east, position=[5, 5]
+Crate grabbed successfully, position=[5, 5]
+Robot moved to south, position=[5, 6]
+Robot moved to south, position=[5, 7]
+Robot moved to south, position=[5, 8]
+Robot moved to south, position=[5, 9]
+Crate dropped successfully, position=[5, 9]
+Processing completed, Robot start position=[5, 9]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 1 Oct, 2021 7:25:46 PM</p>
+</div>
+</div>
+</body>
+</html>

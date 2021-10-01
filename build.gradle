@@ -1,0 +1,26 @@
+plugins {
+    id 'application'
+}
+application {
+    mainClass = 'org.sudheesh.robotwarehouse.Application'
+}
+
+group 'org.sudheesh.robotwarehouse'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+run {
+    standardInput = System.in
+}
+test {
+    useJUnitPlatform()
+    testLogging.showStandardStreams = true
+}
