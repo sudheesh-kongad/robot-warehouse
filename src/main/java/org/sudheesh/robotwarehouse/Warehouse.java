@@ -15,7 +15,7 @@ public class Warehouse {
                 .setyDimension(Constants.Y_DIMENSION)
                 .setInitialRobotPosition(Constants.INITIAL_ROBOT_POSITION_X, Constants.INITIAL_ROBOT_POSITION_Y)
                 .addInitialCratePosition(Constants.INITIAL_CRATE_POSITION_X, Constants.INITIAL_CRATE_POSITION_Y)
-                .addInitialCratePosition(Constants.INITIAL_CRATE_POSITION_2_Y, Constants.INITIAL_CRATE_POSITION_2_Y)
+                .addInitialCratePosition(Constants.INITIAL_CRATE_POSITION_2_X, Constants.INITIAL_CRATE_POSITION_2_Y)
                 .build();
         inputHandler = new UserInputHandler();
         commandProcessor = new CommandProcessor(warehouseGrid);
